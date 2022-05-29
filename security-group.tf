@@ -14,9 +14,9 @@ resource "aws_security_group" "acesso-ssh" {
   }
 }
 
-resource "aws_security_group" "acesso-ssh" {
+resource "aws_security_group" "acesso-ssh-us-east-2" {
   provider = "aws.us-east-2"
-  name        = "acesso-ssh"
+  name        = "acesso-ssh-us-east-2"
   description = "189.120.78.240"
 
   ingress {
