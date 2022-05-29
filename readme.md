@@ -12,6 +12,7 @@
 
 
 ## Comandos do Terraform
+- **terraform init** - Inicia a configuração do terraform no diretorio após a especificação do provider no arquivo main.tf.
 - **terraform plan** - Mostra de execução do que será realizado. Logo mostra tudo o que será, criado, alterado ou removido.
 - **terraform apply** - As alterações feitas serão aplicadas. Como uma boa pratica deve ser executado após o plan.
 - **terraform show**

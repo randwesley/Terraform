@@ -2,3 +2,4 @@
 *.tfstate.backup
 *.pub
 *.hcl
+*.terraform
