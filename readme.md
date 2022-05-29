@@ -12,6 +12,6 @@
 
 
 ## Comandos do Terraform
-**terraform plan** - Mostra de execução do que será realizado. Logo mostra tudo o que será, criado, alterado ou removido.
-**terraform apply** - As alterações feitas serão aplicadas. Como uma boa pratica deve ser executado após o plan.
-**terraform show**
+- **terraform plan** - Mostra de execução do que será realizado. Logo mostra tudo o que será, criado, alterado ou removido.
+- **terraform apply** - As alterações feitas serão aplicadas. Como uma boa pratica deve ser executado após o plan.
+- **terraform show**
