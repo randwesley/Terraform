@@ -7,6 +7,18 @@ variable "amis" {
   }
 }
 
+variable "instance_types" {
+    type = string
+
+    default = "t2.micro"
+}
+
+variable "key_names" {
+    type = string
+
+    default = "terraform-aws"  
+}
+
 variable "cdirs_acesso_remoto" {
   type = list
 
