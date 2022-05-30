@@ -18,16 +18,16 @@ resource "aws_instance" "dev" {
   vpc_security_group_ids = [ aws_security_group.acesso-ssh.id ]
 }
 
-resource "aws_instance" "dev4" {
-  ami = var.amis["us-east-1"]
-  instance_type = var.instance_types
-  key_name = var.key_names
-  tags = {
-    "name" = "dev4"
-  }
-  vpc_security_group_ids = [ aws_security_group.acesso-ssh.id ]
-  depends_on = [aws_s3_bucket.dev4]
-}
+# resource "aws_instance" "dev4" {
+#   ami = var.amis["us-east-1"]
+#   instance_type = var.instance_types
+#   key_name = var.key_names
+#   tags = {
+#     "name" = "dev4"
+#   }
+#   vpc_security_group_ids = [ aws_security_group.acesso-ssh.id ]
+#   depends_on = [aws_s3_bucket.dev4]
+# }
 
 resource "aws_instance" "dev5" {
   ami = var.amis["us-east-1"]
@@ -51,13 +51,13 @@ resource "aws_instance" "dev6" {
   depends_on = [ aws_dynamodb_table.dynamodb-homologacao ]
 }
 
-resource "aws_s3_bucket" "dev4" {
-  bucket = "wesleylabs-dev4"
+# resource "aws_s3_bucket" "dev4" {
+#   bucket = "wesleylabs-dev4"
 
-  tags = {
-    Name        = "wesleylabs-dev4"
-  }
-}
+#   tags = {
+#     Name        = "wesleylabs-dev4"
+#   }
+# }
 
 resource "aws_dynamodb_table" "dynamodb-homologacao" {
   provider = aws.us-east-2
