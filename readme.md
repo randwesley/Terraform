@@ -11,7 +11,7 @@
 
 ### Chave SSH
 Para gerenciar os **Resources** em nuvem, utiliza-se de uma chave SSH. Para cada região da AWS é necessario criar uma chave, mas já que a gestão está sendo feita via Terraform, então é possivel **gerar uma chave local e distribui-la pelas regiões da AWS de acordo com a necessidade.**
-* Gerando a chave SSH:
+** Gerando a chave SSH:
 
 ## Comandos do Terraform
 - **terraform init** - Inicia a configuração do terraform no diretorio após a especificação do provider no arquivo main.tf.
