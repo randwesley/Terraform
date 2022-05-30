@@ -9,7 +9,7 @@ provider "aws" {
 
 resource "aws_instance" "dev" {
   count = 3
-  ami = "ami-09d56f8956ab235b3"
+  ami = var.amis["us-east-1"]
   instance_type = "t2.micro"
   key_name = "terraform-aws"
   tags = {
@@ -19,7 +19,7 @@ resource "aws_instance" "dev" {
 }
 
 resource "aws_instance" "dev4" {
-  ami = "ami-09d56f8956ab235b3"
+  ami = var.amis["us-east-1"]
   instance_type = "t2.micro"
   key_name = "terraform-aws"
   tags = {
@@ -30,7 +30,7 @@ resource "aws_instance" "dev4" {
 }
 
 resource "aws_instance" "dev5" {
-  ami = "ami-09d56f8956ab235b3"
+  ami = var.amis["us-east-1"]
   instance_type = "t2.micro"
   key_name = "terraform-aws"
   tags = {
@@ -41,7 +41,7 @@ resource "aws_instance" "dev5" {
 
 resource "aws_instance" "dev6" {
   provider = aws.us-east-2
-  ami = "ami-0fa49cc9dc8d62c84"
+  ami = var.amis["us-east-2"]
   instance_type = "t2.micro"
   key_name = "terraform-aws"
   tags = {
