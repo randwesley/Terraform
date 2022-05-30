@@ -9,7 +9,9 @@
 
  - O **aws_security_group** declara como será feito o acesso as maquinas criadas atraves do aws_instance. No meu caso, por exemplo, estou utilizando uma conexão SSH, instanciando uma lista de IPS que irão ter acesso as maquinas criadas.
 
-
+### Chave SSH
+Para gerenciar os **Resources** em nuvem, utiliza-se de uma chave SSH. Para cada região da AWS é necessario criar uma chave, mas já que a gestão está sendo feita via Terraform, então é possivel **gerar uma chave local e distribui-la pelas regiões da AWS de acordo com a necessidade.**
+* Gerando a chave SSH:
 
 ## Comandos do Terraform
 - **terraform init** - Inicia a configuração do terraform no diretorio após a especificação do provider no arquivo main.tf.
